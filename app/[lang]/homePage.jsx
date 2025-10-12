@@ -282,27 +282,6 @@ export default function HomePage({ dict, lang }) {
                     </div>
                 </footer>
             </div>
-
-            <style jsx>{`
-                .snow-layer {
-                    position: absolute;
-                    inset: 0;
-                    background-image: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.9) 0.4px, transparent 0.6px),
-                    radial-gradient(circle at 30% 80%, rgba(255,255,255,0.85) 0.4px, transparent 0.6px),
-                    radial-gradient(circle at 80% 30%, rgba(255,255,255,0.75) 0.4px, transparent 0.6px),
-                    radial-gradient(circle at 60% 60%, rgba(255,255,255,0.7) 0.4px, transparent 0.6px);
-                    background-size: 100px 100px, 140px 140px, 120px 120px, 180px 180px;
-                    animation: fall 12s linear infinite;
-                    opacity: 0.55;
-                }
-                @keyframes fall {
-                    0% { transform: translateY(-20%) translateX(0) }
-                    100% { transform: translateY(120%) translateX(40px) }
-                }
-                @media (max-width: 420px) {
-                    .snow-layer { background-size: 60px 60px, 80px 80px, 70px 70px, 100px 100px }
-                }
-            `}</style>
         </main>
     );
 }
