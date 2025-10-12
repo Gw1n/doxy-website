@@ -1,7 +1,5 @@
 "use client";
 
-import { getDictionary } from '@/app/get-dictionary';
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
