@@ -4,16 +4,16 @@ import TranslateButton from "@/app/translateButton";
 
 export default function RootLayout({ children, params }) {
     return (
-        <div className="bg-gradient-to-b from-purple-900 to-blue-800 min-h-screen">
-            <div className="w-full flex flex-row items-start">
-                <div className="flex-1"></div>
-                <div className="flex-shrink-0">
-                    {children}
-                </div>
-                <div className="flex-1 flex justify-end pt-6 pr-6">
-                    <TranslateButton lang={params.lang} />
-                </div>
+        <div className="bg-gradient-to-b from-purple-900 to-blue-800 min-h-screen relative overflow-x-hidden">
+
+            <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-50">
+                <TranslateButton lang={params.lang} />
             </div>
+
+            <main className="min-h-screen w-full flex items-center justify-center">
+                {children}
+            </main>
+
         </div>
     )
 }

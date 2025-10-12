@@ -106,7 +106,7 @@ export default function HomePage({ dict, lang }) {
         <MyRobotics dict={dict}/>
     )
 
-    const linkedinUrl = 'www.linkedin.com/in/mikhail-orekhov-doxy';
+    const linkedinUrl = 'https://www.linkedin.com/in/mikhail-orekhov-doxy';
     const githubUrl = 'https://github.com/Gw1n';
     const resumeUrl = lang === 'ru'
         ? 'ru/resume/cv_russian_mikhail.pdf'
@@ -129,12 +129,12 @@ export default function HomePage({ dict, lang }) {
     };
 
     return (
-        <main className="min-h-screen flex items-center justify-center text-white p-6 relative overflow-hidden">
+        <main className="min-h-screen flex items-center justify-center text-white p-4 sm:p-6 relative overflow-hidden">
             <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
                 <div className="snow-layer opacity-60" />
             </div>
 
-            <div className="max-w-4xl w-full bg-gradient-to-br from-white/5 via-white/3 to-white/2 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl p-8 lg:p-12 ">
+            <div className="max-w-4xl w-full bg-gradient-to-br from-white/5 via-white/3 to-white/2 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl p-6 sm:p-8 lg:p-12">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
                     <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -168,7 +168,7 @@ export default function HomePage({ dict, lang }) {
                             <a href={resumeUrl} download={downloadFilename} className="inline-flex items-center gap-2 text-white/90 hover:text-white"><FileText size={16} /> {dict.profile.contacts.resume}</a>
                         </div>
 
-                        <div className="mt-6 w-full pt-35">
+                        <div className="mt-6 w-full lg:pt-35">
                             <div className="text-xs text-white/70 mb-2">{dict.profile.location.label}</div>
                             <div className="inline-flex items-center gap-2 text-sm bg-white/5 rounded-md px-3 py-2">
                                 <MapPin size={14} /> <span>{dict.profile.location.value}</span>
@@ -195,7 +195,7 @@ export default function HomePage({ dict, lang }) {
                                 <span className="px-3 py-1 text-sm rounded-full bg-white/20">{dict.mainContent.pills[12]}</span>
                             </div>
 
-                            <div className="flex gap-4 border-t-2 pt-4 rounded-none">
+                            <div className="flex flex-wrap gap-4 border-t-2 pt-4 rounded-none">
                                 <Menu>
                                     <MenuButton suppressHydrationWarning={true} className="border-2 border-purple-700 rounded-md bg-white/10 px-3 py-1 text-md cursor-pointer flex gap-2 data-focus:outline-none focus:not-data-focus:outline-none">
                                         {({ open }) => (
@@ -254,7 +254,7 @@ export default function HomePage({ dict, lang }) {
 
 
 
-                            <div className="flex flex-col sm:flex-row gap-3 items-center justify-between mt-auto">
+                            <div className="flex flex-col sm:flex-row gap-3 items-center justify-between mt-auto text-center sm:text-left">
                                 <div className="text-sm text-white/85">
                                     {dict.mainContent.contactCta.text}
                                 </div>
@@ -273,7 +273,7 @@ export default function HomePage({ dict, lang }) {
                     </div>
                 </div>
 
-                <footer className="mt-8 border-t border-white/6 pt-6 text-xs text-white/70 flex flex-col sm:flex-row justify-between items-center gap-3 my-auto">
+                <footer className="mt-8 border-t border-white/6 pt-6 text-xs text-white/70 flex flex-col sm:flex-row justify-between items-center gap-3 text-center sm:text-left">
                     <div>© {new Date().getFullYear()} {dict.footer.copyright}</div>
                     <div className="flex items-center gap-4">
                         <Link href={linkedinUrl} target="_blank" className="hover:underline">{dict.footer.links.linkedin}</Link>
