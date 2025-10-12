@@ -1,0 +1,188 @@
+{
+
+  "profile": {
+    "imageAlt": "Mikhail",
+    "title": "DevOps Engineer",
+    "description": "My name is Mikhail.\nI am studying Robotics at the Technical University of Würzburg-Schweinfurt in Germany.\nAt the same time, I am mastering the profession of a DevOps engineer.",
+    "buttons": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "contacts": {
+      "resume": "Download Resume"
+    },
+    "location": {
+      "label": "Location",
+      "value": "Germany, Schweinfurt"
+    }
+  },
+  "mainContent": {
+    "pills": [
+      "DevOps",
+      "Robotics",
+      "Terraform",
+      "MatLab",
+      "Python",
+      "Docker",
+      "Ansible",
+      "C++",
+      "Arduino",
+      "Linux",
+      "Git",
+      "AWS",
+      "Next.js"
+    ],
+    "tabs": {
+      "defaultButtonText": "My skills",
+      "dropdownOptions": {
+        "devops": "DevOps",
+        "robotics": "Robotics",
+        "etc": "Other Skills",
+        "soft": "Soft skills"
+      },
+      "aboutButton": "About Me"
+    },
+    "contactCta": {
+      "text": "Interested? Feel free to contact me via email or LinkedIn, I'll be glad to respond to your offer.",
+      "emailButton": "Contact",
+      "resumeButton": "Resume"
+    }
+  },
+  "footer": {
+    "copyright": "Mikhail — Aspiring DevOps / Robotics Student",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "resume": "Download CV"
+    }
+  },
+
+  "aboutMe": {
+    "description": "Aspiring DevOps engineer and robotics student with a deep interest in automation and cloud technologies.\nI am proficient with Docker, Terraform, Ansible, the basics of orchestration with Docker Compose, and artifact management with Artifactory. Within academic projects, I have deployed and managed infrastructures in AWS and Yandex Cloud, and also implemented web applications based on them.\nI am eager to grow in a Junior DevOps Engineer role, solving challenges in building reliable infrastructure and automation."
+  },
+
+  "robotics": {
+    "tools": {
+      "title": "Tools and Skills",
+      "skills": [
+        "Linux / Bash",
+        "C++",
+        "MatLab, Robotics System Toolbox",
+        "Python, OpenCV",
+        "Git",
+        "Arduino",
+        "Soldering"
+      ]
+    },
+    "activities": {
+      "title": "What I can do",
+      "tasks": [
+        "Programming microcontrollers at the register level",
+        "Simulating operations in a visual environment",
+        "Programming collaborative robots"
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "linkText": "All on GitHub →",
+      "items": [
+        {
+          "title": "Arduino",
+          "description": "Solving various tasks using Arduino"
+        },
+        {
+          "title": "MatLab RST",
+          "description": "Simulation of an industrial manipulator's operation"
+        }
+      ]
+    }
+  },
+  "devops": {
+    "tools": {
+      "title": "Tools and Skills",
+      "skills": [
+        "Linux / Bash",
+        "Docker, containerization",
+        "Docker Compose",
+        "Terraform / IaC",
+        "CI (GitLab CI)",
+        "Ansible",
+        "Python"
+      ]
+    },
+    "activities": {
+      "title": "What I can do",
+      "tasks": [
+        "Setting up CI for projects",
+        "Automating Docker Compose deployments",
+        "Infrastructure as Code (Terraform)",
+        "Configuring artifact storage in Artifactory",
+        "Automating the installation of required software"
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "linkText": "All on GitHub →",
+      "items": [
+        {
+          "title": "IaC (Terraform)",
+          "description": "Deploying infrastructure in Yandex Cloud"
+        },
+        {
+          "title": "Docker Compose",
+          "description": "Creating easily scalable web applications"
+        }
+      ]
+    }
+  },
+
+  "etc": {
+    "tools": {
+      "title": "Other Useful Skills",
+      "skills": [
+        "Python Django",
+        "Next.js, TailwindCSS",
+        "Microsoft Office",
+        "Autodesk Inventor",
+        "English C1, German A2"
+      ]
+    },
+    "activities": {
+      "title": "Additional Abilities",
+      "tasks": [
+        "Developing backend logic and APIs with Python Django",
+        "Creating the frontend component of web applications",
+        "Creating presentations, reports, and documents",
+        "Experience with CAD systems",
+        "Fluent in speaking and understanding English, able to comprehend everyday German speech"
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "linkText": "All on GitHub →",
+      "items": [
+        {
+          "title": "IaC (Terraform)",
+          "description": "Deploying infrastructure in Yandex Cloud"
+        },
+        {
+          "title": "K8s: demo infra",
+          "description": "Minimal infrastructure for testing the deployment of ROS nodes in Kubernetes."
+        }
+      ]
+    }
+  },
+
+  "softSkills": {
+    "title": "Personal Qualities and Strengths",
+    "skills": [
+      "Giving and receiving feedback",
+      "Negotiation and compromise",
+      "Public speaking and presentations",
+      "Problem-solving and troubleshooting",
+      "Management and prioritization",
+      "Adaptability",
+      "Initiative"
+    ]
+  }
+}

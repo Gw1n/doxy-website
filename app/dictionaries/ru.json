@@ -1,0 +1,187 @@
+{
+  "profile": {
+    "imageAlt": "Михаил",
+    "title": "DevOps инженер",
+    "description": "Меня зовут Михаил.\nУчусь в Германии в Техническом Университете Вюрцбурга-Швайнфурта по программе \"Робототехника\".\nПараллельно осваиваю профессию DevOps-инженера.",
+    "buttons": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "contacts": {
+      "resume": "Скачать резюме"
+    },
+    "location": {
+      "label": "Локация",
+      "value": "Германия, Швайнфурт"
+    }
+  },
+  "mainContent": {
+    "pills": [
+      "DevOps",
+      "Robotics",
+      "Terraform",
+      "MatLab",
+      "Python",
+      "Docker",
+      "Ansible",
+      "C++",
+      "Arduino",
+      "Linux",
+      "Git",
+      "AWS",
+      "Next.js"
+    ],
+    "tabs": {
+      "defaultButtonText": "Мои навыки",
+      "dropdownOptions": {
+        "devops": "DevOps",
+        "robotics": "Робототехника",
+        "etc": "Другие навыки",
+        "soft": "Soft skills"
+      },
+      "aboutButton": "Обо мне"
+    },
+    "contactCta": {
+      "text": "Заинтересовались? Напишите мне на почту или LinkedIn, буду рад откликнуться на Ваше предложение.",
+      "emailButton": "Написать",
+      "resumeButton": "Резюме"
+    }
+  },
+  "footer": {
+    "copyright": "Михаил — начинающий DevOps / студент робототехники",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "resume": "Скачать CV"
+    }
+  },
+
+  "aboutMe": {
+    "description": "Начинающий DevOps-инженер и студент-робототехник с глубоким интересом к автоматизации и облачным технологиям.\nВладею Docker, Terraform, Ansible, основами оркестрации на базе Docker Compose и управлением артефактами на базе Artifactory. В рамках учебных проектов разворачивал и управлял инфраструктурами в AWS и Yandex Cloud, а также реализовывал на их основе веб-приложения.\nХочу развиваться в роли Junior DevOps Engineer и решать задачи по построению надежной инфраструктуры и автоматизации."
+  },
+  "robotics": {
+    "tools": {
+      "title": "Инструменты и навыки",
+      "skills": [
+        "Linux / Bash",
+        "C++",
+        "MatLab, Robotics System Toolbox",
+        "Python, OpenCV",
+        "Git",
+        "Arduino",
+        "Пайка"
+      ]
+    },
+    "activities": {
+      "title": "Чем могу заниматься",
+      "tasks": [
+        "Программирование микроконтроллеров на регистровом языке",
+        "Симуляция операций в визуальной среде",
+        "Программирование коллаборативных роботов"
+      ]
+    },
+    "projects": {
+      "title": "Проекты",
+      "linkText": "Все на GitHub →",
+      "items": [
+        {
+          "title": "Arduino",
+          "description": "Решение различных задач на базе Arduino"
+        },
+        {
+          "title": "MatLab RST",
+          "description": "Симуляция работы промышленного манипулятора"
+        }
+      ]
+    }
+  },
+  "devops": {
+    "tools": {
+      "title": "Инструменты и навыки",
+      "skills": [
+        "Linux / Bash",
+        "Docker, containerization",
+        "Docker Compose",
+        "Terraform / IaC",
+        "CI (GitLab CI)",
+        "Ansible",
+        "Python"
+      ]
+    },
+    "activities": {
+      "title": "Чем могу заниматься",
+      "tasks": [
+        "Настройка CI для проектов",
+        "Автоматизация развертывания Docker Compose",
+        "Инфраструктура как код (Terraform)",
+        "Настройка хранения артефактов в Artifactory",
+        "Автоматическая установка необходимого программного обеспечения"
+      ]
+    },
+    "projects": {
+      "title": "Проекты",
+      "linkText": "Все на GitHub →",
+      "items": [
+        {
+          "title": "IaC (Terraform)",
+          "description": "Развертывание инфраструктуры в Yandex Cloud"
+        },
+        {
+          "title": "Docker Compose",
+          "description": "Создание легко масштабируемых веб-приложений"
+        }
+      ]
+    }
+  },
+
+  "etc": {
+    "tools": {
+      "title": "Другие полезные навыки",
+      "skills": [
+        "Python Django",
+        "Next.js, TailwindCSS",
+        "Microsoft Office",
+        "Autodesk Inventor",
+        "Английский C1, немецкий A2"
+      ]
+    },
+    "activities": {
+      "title": "Дополнительные умения",
+      "tasks": [
+        "Написание бэкенд-составляющей и API на Python Django",
+        "Создание фронтенд-составляющей веб-приложений",
+        "Создание презентаций, отчетов и документов",
+        "Есть опыт работы в CAD-системах",
+        "Свободно изъясняюсь и воспринимаю чужую речь на английском, способен воспринимать повседневную речь на немецком"
+      ]
+    },
+    "projects": {
+      "title": "Проекты",
+      "linkText": "Все на GitHub →",
+      "items": [
+        {
+          "title": "IaC (Terraform)",
+          "description": "Развертывание инфраструктуры в Yandex Cloud"
+        },
+        {
+          "title": "Docker Compose",
+          "description": "Создание легко масштабируемых веб-приложений"
+        }
+      ]
+    }
+  },
+
+  "softSkills": {
+    "title": "Личные качества и сильные стороны",
+    "skills": [
+      "Давать и принимать обратную связь",
+      "Умение договариваться и идти на компромисс",
+      "Публичные выступления и презентации",
+      "Поиск и устранение проблем",
+      "Менеджмент и приоритизация",
+      "Адаптивность",
+      "Инициативность"
+    ]
+  }
+
+}
