@@ -18,8 +18,18 @@
   },
   "mainContent": {
     "pills": [
-      "DevOps", "Robotics", "Terraform", "MatLab", "Python", "Docker",
-      "Ansible", "C++", "Arduino", "Linux", "Git", "AWS", "Next.js"
+      "DevOps",
+      "Terraform",
+      "Terragrunt",
+      "Ansible",
+      "Docker/Docker Compose",
+      "AWS",
+      "Grafana",
+      "Prometheus",
+      "Aletring",
+      "Jenkins",
+      "GitHub Actions",
+      "Kubernetes"
     ],
     "tabs": {
       "defaultButtonText": "Meine Fähigkeiten",
@@ -27,7 +37,7 @@
         "devops": "DevOps",
         "robotics": "Robotik",
         "etc": "Weitere Fähigkeiten",
-        "soft": "Soft Skills"
+        "soft": "Soft Skills",       "certificates": "Zertifikate",        "portfolio": "Portfolio"
       },
       "aboutButton": "Über mich"
     },
@@ -38,16 +48,14 @@
     }
   },
   "footer": {
-    "copyright": "Mikhail — Angehender DevOps / Robotikstudent",
+    "copyright": "Mikhail — DevOps-Ingenieur / Robotikstudent",
     "links": {
       "linkedin": "LinkedIn",
       "github": "GitHub",
       "resume": "CV herunterladen"
     }
   },
-  "aboutMe": {
-    "description": "Angehender DevOps-Ingenieur und Robotikstudent mit großem Interesse an Automatisierung und Cloud-Technologien.\nIch beherrsche Docker, Terraform, Ansible, die Grundlagen der Orchestrierung mit Docker Compose und die Artefaktverwaltung mit Artifactory. Im Rahmen von Studienprojekten habe ich Infrastrukturen in AWS und Yandex Cloud bereitgestellt und verwaltet sowie darauf basierende Webanwendungen implementiert.\nIch möchte mich in der Rolle eines Junior DevOps-Ingenieurs weiterentwickeln und Aufgaben beim Aufbau zuverlässiger Infrastrukturen und deren Automatisierung lösen."
-  },
+
   "robotics": {
     "tools": {
       "title": "Werkzeuge und Fähigkeiten",
@@ -166,5 +174,95 @@
       "Anpassungsfähigkeit",
       "Eigeninitiative"
     ]
+  },
+
+  "certificates": {
+    "title": "Zertifikate",
+    "items": [
+      {
+        "title": "HackaTUM certificate",
+        "issuer": "HackaTUM certificate",
+        "date": "2025",
+        "file": "/certificates/hackaTUM_2025_certificate_Mikhail_Orekhov.pdf",
+        "filename": "hackaTUM_2025_certificate_Mikhail_Orekhov.pdf"
+      }
+    ]
+  },
+  "industrialAutomation": {
+    "title": "Industrielle Automatisierung",
+    "viewLiveButton": "Demo",
+    "viewCodeButton": "Code",
+    "architectureButton": "Architektur-Details",
+    "imagesLabel": "Fotos",
+    "items": [
+      {
+        "title": "Arduino Line-Follower (Low-level Programming)",
+        "description": "Arduino: Entwicklung eines Line-Followers mit **Register-Programmierung** für Echtzeitsteuerung.",
+        "technologies": ["Arduino", "HardWear"]
+      },
+      {
+        "title": "Machine Vision & KUKA Simulations (MATLAB)",
+        "description": "MATLAB: Simulation von **KUKA-Robotern** und Implementierung von **Machine Vision** Algorithmen.",
+        "technologies": ["MatLab", "Robotics System Toolbox", "KUKA", "Image Processing Toolbox"]
+      },
+      {
+        "title": "Industrial Robot Testing (RoboDK)",
+        "description": "RoboDK: Programmierung und Validierung von Arbeitsabläufen an **echten Industrierobotern**.",
+        "technologies": ["RoboDK", "KUKA"],
+        "images": [
+          {"url": "/pictures/robodk/simulation.gif", "alt": "RoboDK-Simulation"}
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Projektportfolio",
+    "description": "Meine Webprojekte und Anwendungen, die ich entwickelt habe.",
+    "viewLiveButton": "Live ansehen",
+    "viewCodeButton": "Code",
+    "architectureButton": "Architektur-Details",
+    "imagesLabel": "Fotos",
+    "emptyState": "Projekte kommen bald",
+    "items": [
+      {
+        "title": "PipelineForge",
+        "description": "Über das Projekt: Ein Web-Tool zur automatisierten Erstellung von **CI/CD-Pipelines** für verschiedene Plattformen. Es ersetzt das fehleranfällige manuelle Schreiben von YAML-Dateien.\n\nFunktionen: Unterstützt die modulare Zusammenstellung von Jobs wie **Security-Checks, Linting und Deployment**.\n\nBackend-Logik: Die Vorlagen werden dynamisch über die **Jinja2** Engine generiert.\n\nInfrastruktur: Die Anwendung ist vollständig **containerisiert** und wird mittels **Docker Compose** orchestriert. Dies ermöglicht ein schnelles Deployment und eine stabile Betriebsumgebung.",
+        "technologies": ["Next.js", "Django", "PostgreSQL", "Redis", "Celery", "Docker"],
+        "liveUrl": "https://pipelineforge.run/",
+        "architecture": "Frontend: Next.js 16 + TailwindCSS für responsive UI.\n\nBackend: Python Django 5 + Django REST Framework für API. PostgreSQL als primäre Datenbank für Benutzerkonfigurationen.\n\nCaching und Warteschlangen: Redis für Template-Caching, Celery für asynchrone Generierung komplexer Konfigurationen.\n\nTemplating: Jinja2 zur Generierung von Pipeline-Konfigurationen für GitLab CI, GitHub Actions, Jenkins und andere Plattformen.\n\nDeployment: Docker + Docker Compose zur Isolierung aller Dienste (Frontend, Backend, DB, Redis, Celery Workers).",
+        "images": [
+          {"url": "/pictures/pipelineforge/project-scheme.png", "alt": "PipelineForge Startseite"}
+        ]
+      },
+
+      {
+        "title": "Support Platform",
+        "description": "Projektziel: Entwicklung einer internen Anwendung für ein Startup zur Optimierung des Supports: Aufgabenverteilung, Wissensdatenbank und automatisierte Provisionsabrechnung.\n\nDevOps-Schwerpunkt: Fokus auf Betriebssicherheit und Skalierbarkeit innerhalb von **AWS**.\n\nDatensicherheit: Einrichtung automatisierter Backups der Datenbank in **AWS S3 Buckets**, um Datenverluste bei Systemausfällen zu verhindern.\n\nMonitoring: Implementierung von **Prometheus und Grafana** zur Überwachung der Server-Metriken in Echtzeit (CPU, RAM, Festplattenauslastung).\n\nAlerting: Integration von **Discord-Webhooks** für ein sofortiges Benachrichtigungssystem bei kritischen Infrastruktur-Ereignissen.",
+        "technologies": ["Next.js", "Django", "PostgreSQL", "Docker", "Grafana", "Prometheus", "Discord Webhooks"],
+        "images": [
+          {"url": "/pictures/support/support-scheme.png", "alt": "Supportarchitekturdiagramm"},
+          {"url": "/pictures/support/monitoring.png", "alt": "Überwachungsunterstützung"}
+        ]
+      },
+      {
+        "title": "Uptime Monitor",
+        "description":"Über das Projekt: Eine in **Kotlin** entwickelte CLI-Anwendung zur automatisierten Überwachung der Website-Verfügbarkeit.\n\nFunktionen: Bietet eine flexible **YAML-Konfiguration** für Überwachungsintervalle und Ziel-URLs.\n\nBenachrichtigung: Integrierter **Telegram-Bot**, der Statusänderungen (Up/Down) sofort in Echtzeit meldet.",
+        "technologies": ["Kotlin", "Monitoring"],
+        "githubUrl": "https://github.com/Gw1n/uptime-monitor",
+        "images": [
+          {"url": "/pictures/uptime-monitor/cli.png", "alt": "Konsolenprotokolle"},
+          {"url": "/pictures/uptime-monitor/telegram.png", "alt": "Benachrichtigung auf Telegram"}
+        ]
+      },
+      {
+        "title": "Persönliche Portfolio-Website",
+        "description": "Moderne responsive Portfolio-Website mit Unterstützung für drei Sprachen, erstellt mit Next.js unter Verwendung von Framer Motion für Animationen.",
+        "image": "/portfolio/portfolio-site.png",
+        "technologies": ["Next.js", "TailwindCSS", "Framer Motion"],
+        "liveUrl": "https://your-site.com",
+        "githubUrl": "https://github.com/Gw1n/portfolio"
+      }
+    ]
   }
+
 }

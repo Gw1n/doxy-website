@@ -1,3 +1,56 @@
 @import "tailwindcss";
 
+@theme {
+  --color-bg-main: #0a0113;
+  --color-bg-primary: #0f172a;
+  --color-bg-secondary: #1e293b;
+  --color-bg-tertiary: #334155;
+  --color-accent-blue: #4c5fd9;
+  --color-accent-indigo: #1e3a8a;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+}
 
+@font-face {
+  font-family: 'Consolas';
+  src: url('/Consolas.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --accent-blue: #4c5fd9;
+  --bg-main: #0a0113;
+  --accent-indigo: #1e3a8a;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  font-family: 'Consolas', serif;
+}
+
+strong {
+  color: #a5b4fc;
+  font-weight: 700;
+}
+
+.snow-layer {
+  display: none;
+}

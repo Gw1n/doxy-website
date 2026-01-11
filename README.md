@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+This is my personal portfolio website where I showcase my work and skills as a DevOps Engineer and Robotics student.
 
-First, run the development server:
+## What's This About?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I built this site to have a central place where people can learn about me, see my projects, and get in touch. It's basically my online resume and project showcase combined.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site supports three languages (English, Russian, and German) so it can reach a wider audience. When you visit, it automatically detects your browser language and shows you the right version.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## What's Inside?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **About Me** - My background, education, and what I do
+- **Skills** - DevOps tools, robotics experience, and other technical skills
+- **Portfolio** - Real projects I've worked on with descriptions and screenshots
+- **Certificates** - Professional certificates and achievements
+- **Contact Info** - Ways to reach me (email, LinkedIn, GitHub)
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+Built with modern web technologies:
+- **Next.js 15** - React framework with App Router
+- **TailwindCSS** - For styling
+- **Framer Motion** - Smooth animations
+- **Markdown Support** - For rich text formatting in project descriptions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project was made by me for my only personal usage.
+Have no idea to be honest, who else might need to use my simple website :)
 
-## Deploy on Vercel
+## Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The content is stored in JSON files (`/app/dictionaries/`) for each language. This makes it easy to update project descriptions, add new skills, or change any text without touching the code.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Images and files (like certificates and resumes) live in the `/public` folder and are served directly.
+
+## Why I Made This
+
+I needed a professional-looking site that's easy to maintain and shows what I can do. Plus, building it was a good way to practice with Next.js and modern web development.

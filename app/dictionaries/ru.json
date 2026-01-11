@@ -18,18 +18,17 @@
   "mainContent": {
     "pills": [
       "DevOps",
-      "Robotics",
       "Terraform",
-      "MatLab",
-      "Python",
-      "Docker",
+      "Terragrunt",
       "Ansible",
-      "C++",
-      "Arduino",
-      "Linux",
-      "Git",
+      "Docker/Docker Compose",
       "AWS",
-      "Next.js"
+      "Grafana",
+      "Prometheus",
+      "Aletring",
+      "Jenkins",
+      "GitHub Actions",
+      "Kubernetes"
     ],
     "tabs": {
       "defaultButtonText": "Мои навыки",
@@ -37,7 +36,7 @@
         "devops": "DevOps",
         "robotics": "Робототехника",
         "etc": "Другие навыки",
-        "soft": "Soft skills"
+        "soft": "Soft skills",        "certificates": "Сертификаты",        "portfolio": "Портфолио"
       },
       "aboutButton": "Обо мне"
     },
@@ -48,7 +47,7 @@
     }
   },
   "footer": {
-    "copyright": "Михаил — начинающий DevOps / студент робототехники",
+    "copyright": "Михаил — DevOps Engineer / студент робототехники",
     "links": {
       "linkedin": "LinkedIn",
       "github": "GitHub",
@@ -56,9 +55,6 @@
     }
   },
 
-  "aboutMe": {
-    "description": "Начинающий DevOps-инженер и студент-робототехник с глубоким интересом к автоматизации и облачным технологиям.\nВладею Docker, Terraform, Ansible, основами оркестрации на базе Docker Compose и управлением артефактами на базе Artifactory. В рамках учебных проектов разворачивал и управлял инфраструктурами в AWS и Yandex Cloud, а также реализовывал на их основе веб-приложения.\nХочу развиваться в роли Junior DevOps Engineer и решать задачи по построению надежной инфраструктуры и автоматизации."
-  },
   "robotics": {
     "tools": {
       "title": "Инструменты и навыки",
@@ -181,6 +177,95 @@
       "Менеджмент и приоритизация",
       "Адаптивность",
       "Инициативность"
+    ]
+  },
+
+  "certificates": {
+    "title": "Сертификаты",
+    "items": [
+      {
+        "title": "HackaTUM certificate",
+        "issuer": "HackaTUM certificate",
+        "date": "2025",
+        "file": "/certificates/hackaTUM_2025_certificate_Mikhail_Orekhov.pdf",
+        "filename": "hackaTUM_2025_certificate_Mikhail_Orekhov.pdf"
+      }
+    ]
+  },
+  "industrialAutomation": {
+    "title": "Индустриальная автоматизация",
+    "viewLiveButton": "Демонстрация",
+    "viewCodeButton": "Код",
+    "architectureButton": "Детали архитектуры",
+    "imagesLabel": "фото",
+    "items": [
+      {
+        "title": "Arduino Line-Follower (Low-level Programming)",
+        "description": "О проекте: Разработал систему управления движением для мобильного робота на базе **Arduino**.\n\nТехническая часть: Программирование велось на **низком уровне (регистровый язык)** для обеспечения максимальной скорости обработки сигналов.\n\nЗадачи: Реализовал алгоритм **взаимодействия моторов с датчиками**, обеспечив плавное и точное перемещение по линии.",
+        "technologies": ["Arduino", "HardWear"]
+      },
+      {
+        "title": "Machine Vision & KUKA Simulations (MATLAB)",
+        "description": "Стек: Использовал **MATLAB** и **Robotics ToolBox** для моделирования работы промышленных роботов.\n\nФункционал: Выполнял задачи по **Machine Vision** (машинному зрению) и рассчитывал траектории движения для моделей манипуляторов **KUKA.**",
+        "technologies": ["MatLab", "Robotics System Toolbox", "KUKA", "Image Processing Toolbox"]
+      },
+      {
+        "title": "Industrial Robot Testing (RoboDK)",
+        "description": "Симуляция: Проектировал рабочие циклы роботов в среде **RoboDK**, создавая цифровой двойник процесса.\n\nТестирование: Проводил верификацию кода на **реальном промышленном роботе**, корректируя параметры для точного выполнения реальных задач.",
+        "technologies": ["RoboDK", "KUKA"],
+        "images": [
+          {"url": "/pictures/robodk/simulation.gif", "alt": "RoboDK-Simulation"}
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Портфолио проектов",
+    "description": "Мои веб-проекты и приложения, которые я разработал.",
+    "viewLiveButton": "Перейти",
+    "viewCodeButton": "Код",
+    "architectureButton": "Детали архитектуры",
+    "imagesLabel": "фото",
+    "emptyState": "Проекты скоро появятся",
+    "items": [
+      {
+        "title": "PipelineForge",
+        "description": "О проекте: Веб-инструмент для генерации **CI/CD** конфигов под различные платформы. Избавляет от необходимости писать сложные YAML-файлы вручную.\n\nФункционал: Поддерживает сборку пайплайнов из готовых модулей: **security checks, linting, deployment** и другие.\n\nТехнологии: Вся логика генерации шаблонов построена на **Jinja2**.\n\nАрхитектура: Приложение полностью **контейнеризированно** и оркеструется через **Docker Compose**. Это обеспечивает быстрый запуск и консистентность среды разработки.",
+        "technologies": ["Next.js", "Django", "PostgreSQL", "Redis", "Celery", "Docker"],
+        "liveUrl": "https://pipelineforge.run/",
+        "architecture": "Фронтенд: Next.js 16 + TailwindCSS для адаптивного UI.\n\nБэкенд: Python Django 5 + Django REST Framework для API. PostgreSQL в качестве основной БД для хранения пользовательских конфигураций.\n\nКэширование и очереди: Redis для кэширования шаблонов, Celery для асинхронной генерации сложных конфигураций.\n\nШаблонизация: Jinja2 для генерации pipeline конфигов под GitLab CI, GitHub Actions, Jenkins и другие платформы.\n\nРазвертывание: Docker + Docker Compose для изоляции всех сервисов (фронтенд, бэкенд, БД, Redis, Celery workers).",
+        "images": [
+          {"url": "/pictures/pipelineforge/project-scheme.png", "alt": "Схема архитектуры PipelineForge"}
+        ]
+      },
+
+      {
+        "title": "Support Platform",
+        "description": "О проекте: Разработал внутреннюю систему для стартапа, автоматизирующую работу службы поддержки: распределение задач, базу знаний и расчет KPI сотрудников.\n\nDevOps реализация: Основной упор сделал на надежность и «прозрачность» работы сервиса в облаке **AWS**.\n\nАвтоматизация и безопасность: Настроил регулярные автоматические бэкапы базы данных в **AWS S3**, гарантируя сохранность данных даже при критических сбоях.\n\nМониторинг: Развернул связку **Prometheus + Grafana**, выведя ключевые метрики состояния сервера на дашборд.\n\nАлертинг: Интегрировал алертинг через веб-хуки в **Discord** — разработчик узнает о проблемах с сервером мгновенно, до того как это заметят пользователи.",
+        "technologies": ["Next.js", "Django", "PostgreSQL", "Docker", "Grafana", "Prometheus", "Discord Webhooks"],
+        "images": [
+          {"url": "/pictures/support/support-scheme.png", "alt": "Схема архитектуры Support"},
+          {"url": "/pictures/support/monitoring.png", "alt": "Мониторинг Support"}
+        ]
+      },
+      {
+        "title": "Uptime Monitor",
+        "description":"О проекте: Разработал на **Kotlin** консольное приложение для автоматической проверки доступности веб-ресурсов.\n\nФункционал: Параметры мониторинга и частота опроса гибко настраиваются через **YAML-конфигурацию**.\n\nАлертинг: Интегрировал **Telegram-бота**, который мгновенно уведомляет об изменении статуса сайтов (Up/Down).",
+        "technologies": ["Kotlin", "Monitoring"],
+        "githubUrl": "https://github.com/Gw1n/uptime-monitor",
+        "images": [
+          {"url": "/pictures/uptime-monitor/cli.png", "alt": "Консольные логи"},
+          {"url": "/pictures/uptime-monitor/telegram.png", "alt": "Оповещения в Telegram"}
+        ]
+      },
+      {
+        "title": "Личный сайт-портфолио",
+        "description": "Современный адаптивный сайт-визитка с поддержкой трех языков, построенный на Next.js с использованием Framer Motion для анимаций.",
+        "image": "/portfolio/portfolio-site.png",
+        "technologies": ["Next.js", "TailwindCSS", "Framer Motion"],
+        "liveUrl": "https://your-site.com",
+        "githubUrl": "https://github.com/Gw1n/doxy-website"
+      }
     ]
   }
 

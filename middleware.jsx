@@ -3,7 +3,7 @@ import Negotiator from 'negotiator';
 import { match } from '@formatjs/intl-localematcher';
 
 let locales = ['ru', 'en', 'de'];
-let defaultLocale = 'ru';
+let defaultLocale = 'en';
 
 function getLocale(request) {
     const headers = {};
@@ -30,6 +30,6 @@ export function middleware(request) {
 
 export const config = {
     matcher: [
-        '/((?!api|_next/static|_next/image|favicon.ico).*)',
+        '/((?!api|_next/static|_next/image|favicon.ico|pictures|certificates|industrial|portfolio|PlayfairDisplay|ru/resume|en/resume).*)',
     ],
 };
