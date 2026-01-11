@@ -259,8 +259,7 @@
         "description": "Moderne responsive Portfolio-Website mit Unterstützung für drei Sprachen, erstellt mit Next.js unter Verwendung von Framer Motion für Animationen.",
         "image": "/portfolio/portfolio-site.png",
         "technologies": ["Next.js", "TailwindCSS", "Framer Motion"],
-        "liveUrl": "https://your-site.com",
-        "githubUrl": "https://github.com/Gw1n/portfolio"
+        "githubUrl": "https://github.com/Gw1n/doxy-website"
       }
     ]
   }

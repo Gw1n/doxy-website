@@ -263,7 +263,6 @@
         "description": "Современный адаптивный сайт-визитка с поддержкой трех языков, построенный на Next.js с использованием Framer Motion для анимаций.",
         "image": "/portfolio/portfolio-site.png",
         "technologies": ["Next.js", "TailwindCSS", "Framer Motion"],
-        "liveUrl": "https://your-site.com",
         "githubUrl": "https://github.com/Gw1n/doxy-website"
       }
     ]
