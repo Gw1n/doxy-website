@@ -26,10 +26,12 @@
       "AWS",
       "Grafana",
       "Prometheus",
-      "Aletring",
+      "Alerting",
       "Jenkins",
       "GitHub Actions",
-      "Kubernetes"
+      "Kubernetes",
+      "SQL",
+      "Python"
     ],
     "tabs": {
       "defaultButtonText": "Meine Fähigkeiten",
