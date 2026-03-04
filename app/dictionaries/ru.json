@@ -234,10 +234,13 @@
         "title": "PipelineForge",
         "description": "О проекте: Веб-инструмент для генерации **CI/CD** конфигов под различные платформы. Избавляет от необходимости писать сложные YAML-файлы вручную.\n\nФункционал: Поддерживает сборку пайплайнов из готовых модулей: **security checks, linting, deployment** и другие.\n\nТехнологии: Вся логика генерации шаблонов построена на **Jinja2**.\n\nАрхитектура: Приложение полностью **контейнеризированно** и оркеструется через **Docker Compose**. Это обеспечивает быстрый запуск и консистентность среды разработки.",
         "technologies": ["Next.js", "Django", "PostgreSQL", "Redis", "Celery", "Docker"],
-        "liveUrl": "https://pipelineforge.run/",
         "architecture": "Фронтенд: Next.js 16 + TailwindCSS для адаптивного UI.\n\nБэкенд: Python Django 5 + Django REST Framework для API. PostgreSQL в качестве основной БД для хранения пользовательских конфигураций.\n\nКэширование и очереди: Redis для кэширования шаблонов, Celery для асинхронной генерации сложных конфигураций.\n\nШаблонизация: Jinja2 для генерации pipeline конфигов под GitLab CI, GitHub Actions, Jenkins и другие платформы.\n\nРазвертывание: Docker + Docker Compose для изоляции всех сервисов (фронтенд, бэкенд, БД, Redis, Celery workers).",
         "images": [
-          {"url": "/pictures/pipelineforge/project-scheme.png", "alt": "Схема архитектуры PipelineForge"}
+          {"url": "/pictures/pipelineforge/project-scheme.png", "alt": "Схема архитектуры PipelineForge"},
+          {"url": "/pictures/pipelineforge/pf-1.png", "alt": "PipelineForge интерфейс, этап 1"},
+          {"url": "/pictures/pipelineforge/pf-2.png", "alt": "PipelineForge интерфейс, этап 2"},
+          {"url": "/pictures/pipelineforge/pf-3.png", "alt": "PipelineForge интерфейс, этап 3"},
+          {"url": "/pictures/pipelineforge/pf-4.png", "alt": "PipelineForge интерфейс, личный кабинет"}
         ]
       },
 

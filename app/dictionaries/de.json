@@ -230,10 +230,13 @@
         "title": "PipelineForge",
         "description": "Über das Projekt: Ein Web-Tool zur automatisierten Erstellung von **CI/CD-Pipelines** für verschiedene Plattformen. Es ersetzt das fehleranfällige manuelle Schreiben von YAML-Dateien.\n\nFunktionen: Unterstützt die modulare Zusammenstellung von Jobs wie **Security-Checks, Linting und Deployment**.\n\nBackend-Logik: Die Vorlagen werden dynamisch über die **Jinja2** Engine generiert.\n\nInfrastruktur: Die Anwendung ist vollständig **containerisiert** und wird mittels **Docker Compose** orchestriert. Dies ermöglicht ein schnelles Deployment und eine stabile Betriebsumgebung.",
         "technologies": ["Next.js", "Django", "PostgreSQL", "Redis", "Celery", "Docker"],
-        "liveUrl": "https://pipelineforge.run/",
         "architecture": "Frontend: Next.js 16 + TailwindCSS für responsive UI.\n\nBackend: Python Django 5 + Django REST Framework für API. PostgreSQL als primäre Datenbank für Benutzerkonfigurationen.\n\nCaching und Warteschlangen: Redis für Template-Caching, Celery für asynchrone Generierung komplexer Konfigurationen.\n\nTemplating: Jinja2 zur Generierung von Pipeline-Konfigurationen für GitLab CI, GitHub Actions, Jenkins und andere Plattformen.\n\nDeployment: Docker + Docker Compose zur Isolierung aller Dienste (Frontend, Backend, DB, Redis, Celery Workers).",
         "images": [
-          {"url": "/pictures/pipelineforge/project-scheme.png", "alt": "PipelineForge Startseite"}
+          {"url": "/pictures/pipelineforge/project-scheme.png", "alt": "PipelineForge Startseite"},
+          {"url": "/pictures/pipelineforge/pf-1.png", "alt": "PipelineForge Schnittstelle, Etappe 1"},
+          {"url": "/pictures/pipelineforge/pf-2.png", "alt": "PipelineForge Schnittstelle, Etappe 2"},
+          {"url": "/pictures/pipelineforge/pf-3.png", "alt": "PipelineForge Schnittstelle, Etappe 3"},
+          {"url": "/pictures/pipelineforge/pf-4.png", "alt": "PipelineForge Schnittstelle, persönliches Büro"}
         ]
       },
 
